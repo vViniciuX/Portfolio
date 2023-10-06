@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: whitesmoke;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: url("../issues/images/download\ \(2\).jpg") center;
+  background-size: cover;
+  backdrop-filter: blur(10px) brightness(0.5);
+}
+
+#title {
+  font-family: myFont;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#calculator {
+  height: 600px;
+  width: 400px;
+  background: linear-gradient(rgb(22, 22, 37), rgb(32, 32, 32, 1));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  height: 32%;
+  width: 94%;
+  align-items: end;
+  justify-content: end;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#keys {
+  background-color: rgba(0, 0, 0, 0);
+  height: 61.2%;
+  width: 98%;
+  font-size: 50px;
+}
+
+#memory {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 10%;
+}
+
+#memory > button {
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+
+#simbols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+#simbols > button {
+  background-color: rgba(80, 80, 80, 0.3);
+  border-radius: 5px;
+  height: 100%;
+  font-size: 18px;
+}
+
+#simbols > button:hover {
+  cursor: pointer;
+  backdrop-filter: brightness(0.7);
+}
